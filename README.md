@@ -1,2 +1,2 @@
 # College-Course-Work
- Repo of all my college course work
+ Repository of all my college course work. Nothing special here other than seeing a good snapshot of my college work.

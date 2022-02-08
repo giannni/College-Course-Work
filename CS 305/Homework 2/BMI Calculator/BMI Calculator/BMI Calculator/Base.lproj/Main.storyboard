@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7M-vC-kxP">
+                                <rect key="frame" x="94.5" y="368.5" width="231" height="59"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="Calculate BMI">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bAk-65-SgX"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="0.0" maxValue="300" minimumValueImage="arrow.down" catalog="system" maximumValueImage="arrow.up" translatesAutoresizingMaskIntoConstraints="NO" id="0XG-BM-VkZ">
+                                <rect key="frame" x="62" y="177.5" width="300" height="31"/>
+                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <connections>
+                                    <action selector="heightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vZS-Jd-qNe"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="200" minValue="0.0" maxValue="400" minimumValueImage="arrow.down" catalog="system" maximumValueImage="arrow.up" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-t5-2X3">
+                                <rect key="frame" x="62" y="261.5" width="300" height="31"/>
+                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <connections>
+                                    <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="2KZ-73-uTn"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lk6-uQ-fMW">
+                                <rect key="frame" x="176.5" y="140" width="76" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6h-Pc-Stg">
+                                <rect key="frame" x="174.5" y="224" width="80" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hx-4h-Bpt">
+                                <rect key="frame" x="171" y="509.5" width="72.5" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="173-uX-qIo">
+                                <rect key="frame" x="136" y="589.5" width="156" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PMu-RE-pEF">
+                                <rect key="frame" x="339" y="796" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchThemes:" destination="BYZ-38-t0r" eventType="valueChanged" id="CF6-bv-1aX"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch color theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-r5-yKN">
+                                <rect key="frame" x="257" y="767" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njb-hD-IPv">
+                                <rect key="frame" x="82" y="44" width="250" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="I2Q-r5-yKN" secondAttribute="bottom" constant="108" id="DS4-Kt-Uz1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I2Q-r5-yKN" secondAttribute="trailing" constant="9" id="GuN-rC-lVo"/>
+                            <constraint firstItem="0XG-BM-VkZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5" id="HNa-e1-wqO"/>
+                            <constraint firstItem="njb-hD-IPv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HpH-5Y-LPL"/>
+                            <constraint firstItem="t6h-Pc-Stg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7.5" id="JMb-zU-CSD"/>
+                            <constraint firstItem="njb-hD-IPv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-380" id="KBY-rd-pSu"/>
+                            <constraint firstItem="PMu-RE-pEF" firstAttribute="top" secondItem="I2Q-r5-yKN" secondAttribute="bottom" constant="8" id="LHy-dh-8ri"/>
+                            <constraint firstItem="173-uX-qIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7" id="O3X-cp-l3o"/>
+                            <constraint firstItem="173-uX-qIo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="163.5" id="Pdr-TM-uLn"/>
+                            <constraint firstItem="t6h-Pc-Stg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-209.5" id="RcC-Nb-unK"/>
+                            <constraint firstItem="Lk6-uQ-fMW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7.5" id="XhV-XD-clH"/>
+                            <constraint firstItem="A7M-vC-kxP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="egh-Ny-hxv"/>
+                            <constraint firstItem="PMu-RE-pEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="339" id="fE9-aZ-uwK"/>
+                            <constraint firstItem="hZc-t5-2X3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-171.5" id="hcY-cI-NQ7"/>
+                            <constraint firstItem="0XG-BM-VkZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="jYV-KI-snc"/>
+                            <constraint firstItem="0XG-BM-VkZ" firstAttribute="leading" secondItem="hZc-t5-2X3" secondAttribute="leading" id="k9Z-7T-5Uj"/>
+                            <constraint firstItem="hZc-t5-2X3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5" id="mHV-RK-V5a"/>
+                            <constraint firstItem="I2Q-r5-yKN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mqq-6Z-dI3"/>
+                            <constraint firstItem="A7M-vC-kxP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="pg7-uN-EUT"/>
+                            <constraint firstItem="Lk6-uQ-fMW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-293.5" id="uYP-ev-12x"/>
+                            <constraint firstItem="7hx-4h-Bpt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xhv-ZR-qJS"/>
+                            <constraint firstItem="0XG-BM-VkZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-255.5" id="xnE-ro-hVi"/>
+                            <constraint firstItem="7hx-4h-Bpt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="83.75" id="yUl-MW-wHs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bmiLabel" destination="7hx-4h-Bpt" id="Sdd-FP-Oju"/>
+                        <outlet property="calcButton" destination="A7M-vC-kxP" id="Xgs-sF-pbu"/>
+                        <outlet property="categoryLabel" destination="173-uX-qIo" id="ECn-aC-XFR"/>
+                        <outlet property="displayHeight" destination="Lk6-uQ-fMW" id="jx7-HF-pzw"/>
+                        <outlet property="displayWeight" destination="t6h-Pc-Stg" id="Hcj-sV-OkF"/>
+                        <outlet property="height" destination="0XG-BM-VkZ" id="cLh-7L-9gm"/>
+                        <outlet property="weight" destination="hZc-t5-2X3" id="v5S-nf-mxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.down" catalog="system" width="58" height="64"/>
+        <image name="arrow.up" catalog="system" width="58" height="64"/>
+    </resources>
+</document>

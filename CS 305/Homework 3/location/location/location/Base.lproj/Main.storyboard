@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="location" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zo-GP-oPV">
+                                <rect key="frame" x="144" y="589" width="103" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGA-A0-Vn7">
+                                <rect key="frame" x="144" y="639" width="126" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="13b-sq-Jkj">
+                                <rect key="frame" x="20" y="218" width="374" height="348"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Os5-ra-nc3">
+                                <rect key="frame" x="97" y="790" width="220" height="48"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Athletic Complex">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAthletic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OX7-PG-t3Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAs-fS-4Yb">
+                                <rect key="frame" x="37" y="710" width="107" height="48"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Romano">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setRomano:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHQ-g8-ifH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXv-0U-cv0">
+                                <rect key="frame" x="150" y="710" width="133" height="48"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Commons">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setCommons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gL8-qE-19c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KJ-4U-Dm5">
+                                <rect key="frame" x="291" y="710" width="87" height="48"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Village">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setVillage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhR-JJ-jH2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STAC Maps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOR-or-hGr">
+                                <rect key="frame" x="82.5" y="89" width="249" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="13b-sq-Jkj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7AI-jk-Z5W"/>
+                            <constraint firstItem="iAs-fS-4Yb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-116.5" id="8eu-Ds-lp1"/>
+                            <constraint firstItem="Os5-ra-nc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A29-z6-TFf"/>
+                            <constraint firstItem="13b-sq-Jkj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="174" id="Bqz-aZ-yjE"/>
+                            <constraint firstItem="hGA-A0-Vn7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fb7-W2-8sX"/>
+                            <constraint firstItem="7Zo-GP-oPV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="158.5" id="GmH-xQ-UsJ"/>
+                            <constraint firstItem="iAs-fS-4Yb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="286" id="Kwf-RK-ubX"/>
+                            <constraint firstItem="6KJ-4U-Dm5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="127.5" id="RXm-Vg-uPY"/>
+                            <constraint firstItem="Os5-ra-nc3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="366" id="Rxq-82-daS"/>
+                            <constraint firstItem="13b-sq-Jkj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UCZ-dX-ZVU"/>
+                            <constraint firstItem="7Zo-GP-oPV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-11.5" id="WYm-Mk-eV3"/>
+                            <constraint firstItem="QOR-or-hGr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eog-Uv-f9i"/>
+                            <constraint firstItem="QOR-or-hGr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-329" id="ijq-DS-rXT"/>
+                            <constraint firstItem="hGA-A0-Vn7" firstAttribute="top" secondItem="7Zo-GP-oPV" secondAttribute="bottom" constant="15" id="j4r-kU-JIM"/>
+                            <constraint firstItem="6KJ-4U-Dm5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="286" id="nrO-jv-u12"/>
+                            <constraint firstItem="HXv-0U-cv0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="9.5" id="okn-3W-GKr"/>
+                            <constraint firstItem="7Zo-GP-oPV" firstAttribute="top" secondItem="13b-sq-Jkj" secondAttribute="bottom" constant="23" id="tXe-oU-1C6"/>
+                            <constraint firstItem="HXv-0U-cv0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="286" id="wWw-un-RIV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="athleticComplex" destination="Os5-ra-nc3" id="mfg-Nh-oG8"/>
+                        <outlet property="commonsButton" destination="HXv-0U-cv0" id="TWG-dW-nEv"/>
+                        <outlet property="latitude" destination="7Zo-GP-oPV" id="SdA-6K-gva"/>
+                        <outlet property="longitude" destination="hGA-A0-Vn7" id="cI8-KG-cLT"/>
+                        <outlet property="mapView" destination="13b-sq-Jkj" id="TFD-rQ-75c"/>
+                        <outlet property="romanoButton" destination="iAs-fS-4Yb" id="Dao-Dj-Gxh"/>
+                        <outlet property="villageButton" destination="6KJ-4U-Dm5" id="sCb-wP-t2H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
